@@ -1,13 +1,28 @@
 version: '3.8'
 
 services:
+  # Reverse Proxy - handles all incoming traffic
+  proxy:
+    image: nginx:alpine
+    container_name: nginx-reverse-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
+    depends_on:
+      - portfolio
+    networks:
+      - portfolio-network
+
+  # Portfolio Application
   portfolio:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: joshua-gulizia-portfolio
-    ports:
-      - "80:80"
+    expose:
+      - "80"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
