@@ -92,7 +92,7 @@ const ExperiencePage: React.FC = () => {
       id: 'operations-officer',
       title: 'Operations Officer',
       company: 'Code Coogs',
-      companyLogo: <img src={`${import.meta.env.BASE_URL}logoWhite.PNG`} alt="Code Coogs" style={{ width: '180px', height: 'auto', display: 'block', margin: '0' }} />,
+      companyLogo: <img src={`${import.meta.env.BASE_URL}logowhite.png`} alt="Code Coogs" style={{ width: '180px', height: 'auto', display: 'block', margin: '0' }} />,
       location: 'University of Houston',
       startDate: 'Jan 2025',
       endDate: 'Present',
