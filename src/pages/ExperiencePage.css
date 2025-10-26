@@ -642,44 +642,60 @@
   }
 }
 
-@media (max-width: 1199px) and (min-width: 769px) {
+@media (max-width: 1599px) and (min-width: 1351px) {
   .timeline-content {
-    width: 35% !important;
-    min-width: 550px !important;
-    max-width: 650px !important;
+    width: 40% !important;
+    min-width: 450px !important;
+    max-width: 550px !important;
     padding: 1.5rem !important;
   }
 
   .timeline-item:nth-child(odd) .timeline-content {
     margin-right: 40px;
-    left: 140px;
+    left: 100px;
   }
 
   .timeline-item:nth-child(even) .timeline-content {
     margin-left: 40px;
-    right: 140px;
+    right: 100px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
+  .timeline-container {
+    padding: 0 1rem;
+  }
+
   .timeline-container::before {
     left: 30px;
   }
 
   .timeline-item {
     flex-direction: row !important;
-    padding-left: 80px;
+    padding-left: 0;
+    margin-left: 80px;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    flex-direction: row !important;
   }
 
   .timeline-item:nth-child(odd) .timeline-content,
   .timeline-item:nth-child(even) .timeline-content {
     margin-left: 0;
     margin-right: 0;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: 100% !important;
   }
 
   .timeline-dot {
-    left: 30px;
-    margin-left: 0;
+    left: -95px !important;
+    margin-left: 0 !important;
+    top: 130px;
   }
 
   .timeline-item:hover .timeline-dot {
@@ -689,6 +705,7 @@
   .timeline-content {
     width: 100%;
     max-width: none;
+    padding: 1.5rem;
   }
 
   .skills-grid {
@@ -706,6 +723,14 @@
 }
 
 @media (max-width: 480px) {
+  .timeline-container {
+    padding: 0 0.5rem;
+  }
+
+  .timeline-item {
+    margin-left: 70px;
+  }
+
   .meta {
     flex-direction: column;
     gap: 0.5rem;
@@ -717,7 +742,12 @@
     gap: 1rem;
   }
 
-  .timeline-item {
-    padding-left: 70px;
+  .timeline-content {
+    padding: 1rem;
+  }
+
+  .company-logo-container img {
+    max-width: 150px;
+    height: auto;
   }
 }

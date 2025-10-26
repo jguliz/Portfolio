@@ -98,12 +98,11 @@ const ExperiencePage: React.FC = () => {
       endDate: 'Present',
       current: true,
       type: 'leadership',
-      description: 'Leading technical education initiatives for the university\'s premier coding organization.',
+      description: 'Leading technical education initiatives for one of the university\'s biggest coding organizations.',
       achievements: [
         'Conduct technical workshops teaching full-stack development to 200+ students per semester',
         'Collaborate with officers to coordinate workshop scheduling and curriculum development',
         'Mentor students on programming fundamentals, project development, and industry best practices',
-        'Organized hackathon events with 100+ participants and industry sponsors',
         'Developed comprehensive workshop materials covering React, Node.js, and cloud deployment'
       ],
       technologies: ['React', 'Node.js', 'JavaScript', 'Python', 'Git', 'AWS', 'Docker'],
