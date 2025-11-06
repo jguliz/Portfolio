@@ -1,0 +1,293 @@
+/**
+ * Dark Bento UI - Utility Styles
+ * Reusable CSS classes for rapid development
+ */
+
+/* CSS Variables */
+:root {
+  /* Colors */
+  --bg-primary: #0A0A0F;
+  --bg-secondary: #121218;
+  --surface-primary: #1A1A24;
+  --surface-secondary: #1E1E2E;
+  --surface-elevated: #252533;
+  
+  --accent-blue: #3B82F6;
+  --accent-purple: #8B5CF6;
+  --accent-green: #10B981;
+  --accent-orange: #F59E0B;
+  
+  --bullish: #10B981;
+  --bearish: #EF4444;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-tertiary: rgba(255, 255, 255, 0.5);
+  
+  --border: rgba(255, 255, 255, 0.1);
+  
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  
+  /* Transitions */
+  --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Grid System */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 24px;
+}
+
+/* Bento Items */
+.bento-item {
+  background: rgba(26, 26, 36, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: all 0.3s var(--ease-out);
+}
+
+.bento-item:hover {
+  transform: translateY(-4px) scale(1.01);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Size Variants */
+.bento-small { grid-column: span 1; }
+.bento-medium { grid-column: span 2; }
+.bento-large { grid-column: span 2; grid-row: span 2; }
+.bento-wide { grid-column: span 4; }
+
+/* Glass Effect */
+.glass {
+  background: rgba(26, 26, 36, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Gradient Backgrounds */
+.gradient-blue {
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+}
+
+.gradient-purple {
+  background: linear-gradient(135deg, #8B5CF6, #EC4899);
+}
+
+.gradient-green {
+  background: linear-gradient(135deg, #10B981, #3B82F6);
+}
+
+/* Text Utilities */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-tertiary { color: var(--text-tertiary); }
+
+.text-sm { font-size: 14px; }
+.text-base { font-size: 16px; }
+.text-lg { font-size: 18px; }
+.text-xl { font-size: 20px; }
+.text-2xl { font-size: 24px; }
+.text-3xl { font-size: 30px; }
+.text-4xl { font-size: 36px; }
+
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.font-medium { font-weight: 500; }
+
+.font-mono { font-family: 'SF Mono', 'Consolas', monospace; }
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-bullish {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--bullish);
+}
+
+.badge-bearish {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--bearish);
+}
+
+.badge-info {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--accent-blue);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-out);
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent-blue);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #60A5FA;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
+
+.btn-secondary {
+  background: var(--surface-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--surface-secondary);
+  border-color: var(--accent-blue);
+}
+
+/* Spacing Utilities */
+.p-1 { padding: var(--space-1); }
+.p-2 { padding: var(--space-2); }
+.p-3 { padding: var(--space-3); }
+.p-4 { padding: var(--space-4); }
+.p-6 { padding: var(--space-6); }
+.p-8 { padding: var(--space-8); }
+
+.m-1 { margin: var(--space-1); }
+.m-2 { margin: var(--space-2); }
+.m-3 { margin: var(--space-3); }
+.m-4 { margin: var(--space-4); }
+.m-6 { margin: var(--space-6); }
+.m-8 { margin: var(--space-8); }
+
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+
+/* Flex Utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-end { justify-content: flex-end; }
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  to { transform: translateX(100%); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s var(--ease-out) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleFadeIn 0.5s var(--ease-out) forwards;
+}
+
+/* Glow Effects */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5),
+              0 0 40px rgba(59, 130, 246, 0.3);
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.8),
+               0 0 20px rgba(59, 130, 246, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bento-medium,
+  .bento-large,
+  .bento-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
