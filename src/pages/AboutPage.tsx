@@ -53,7 +53,7 @@ const AboutPage: React.FC = () => {
     {
       title: 'IBM Data Science Professional Certificate',
       issuer: 'IBM',
-      date: '2025',
+      date: 'In Progress',
       skills: ['Machine Learning', 'SQL', 'Data Visualization']
     }
   ];
