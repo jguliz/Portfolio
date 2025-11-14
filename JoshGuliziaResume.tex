@@ -1,0 +1,215 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Joshua Gulizia} \\ \vspace{1pt}
+    \small 832-221-8301 $|$ \href{mailto:jgulizia1205@gmail.com}{\underline{jgulizia1205@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/josh-gulizia/}{\underline{linkedin.com/in/josh-gulizia}} $|$
+    \href{https://jguliz.com}{\underline{jguliz.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Houston}{Houston, TX}
+      {Bachelor of Science in Computer Science, Minor in Mathematics}{Aug. 2023 -- May 2026}\\[10pt]
+      {Relevant Coursework: Machine Learning, Data Science, Database Systems, Data Structures, Statistics}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+      {Data Science Intern}{Aug. 2025 -- Present}
+      {Sun \& Ski Sports}{Houston, TX}
+      \resumeItemListStart
+        \resumeItem{Analyzed \textbf{10M+ rows} of sales data using \textbf{PostgreSQL} and \textbf{pandas} across \textbf{40 retail locations}}
+        \resumeItem{Built automated data pipelines with \textbf{Prefect}, reducing manual processing from \textbf{5 hours to 1 hour} weekly}
+        \resumeItem{Developed store-specific sales forecast models using \textbf{XGBoost}, achieving \textbf{85\% accuracy} (15\% MAPE)}
+        \resumeItem{Leveraged \textbf{AI} to automate development workflows, accelerating project completion by \textbf{80\%}}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {QuickBooks Bookkeeper}{Apr. 2023 -- Jul. 2025}
+      {Reel It Inn Rentals}{Freeport, TX}
+      \resumeItemListStart
+        \resumeItem{Managed \textbf{\$30K yearly revenue} processing \textbf{50+} monthly transactions in \textbf{QuickBooks}}
+        \resumeItem{Maintained financial records with \textbf{99\% accuracy} for accounts payable and receivable}
+        \resumeItem{Generated monthly financial reports to track revenue trends and inform management decisions}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{ML-Powered Algorithmic Trading Platform} $|$ \emph{Python, PyTorch, React, MySQL, Docker}}{Jul. 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Building ML pipeline with \textbf{LSTM} and ensemble models processing \textbf{500K+ daily volume} stocks}
+            \resumeItem{Developed distributable trading tool with \textbf{60\% confidence thresholds} and real-time WebSocket data streams}
+            \resumeItem{Engineered microservice architecture using \textbf{FastAPI}, \textbf{MySQL}, \textbf{Redis}, and \textbf{Docker} containerization to achieve sub-80ms average response times}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{StockScope - Real-Time Stock Monitoring Platform} $|$ \emph{React, Node.js, AWS}}{Feb. 2025 -- Jun. 2025}
+          \resumeItemListStart
+            \resumeItem{Built stock screening application tracking \textbf{500+ stocks} with real-time price updates and alerts}
+            \resumeItem{Implemented \textbf{WebSocket} data pipeline processing 500 API calls per second with \textbf{sub-100ms} response times}
+            \resumeItem{Deployed backend on \textbf{AWS RDS} with optimized PostgreSQL queries for historical data analysis}
+            \resumeItem{Integrated user authentication with \textbf{bcrypt} password hashing and JWT tokens for secure account management}
+          \resumeItemListEnd
+
+          
+      \resumeProjectHeading
+          {\textbf{Cougar Library Management System} $|$ \emph{React, Node.js, MySQL}}{Jan. 2025 -- May 2025}
+          \resumeItemListStart
+            \resumeItem{Built library management platform with \textbf{role-based authentication} for 3 user types}
+            \resumeItem{Implemented inventory system handling borrowing, hold processing, and automated fine calculations}
+            \resumeItem{Developed secure \textbf{REST API} with Express.js and MySQL database with transaction support}
+            \resumeItem{Created responsive React interface with dynamic search, filtering, and real-time notifications}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Leadership}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Operations Officer}{Jan. 2025 -- Present}
+      {Code Coogs}{Houston, TX}
+      \resumeItemListStart
+        \resumeItem{Conduct technical workshops teaching full-stack development to \textbf{200+ students} per semester}
+        \resumeItem{Collaborate with other officers to coordinate workshop scheduling and curriculum development}
+        \resumeItem{Mentor students on programming fundamentals, project development, and industry best practices}
+      \resumeItemListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+%     \textbf{Certifications}{: IBM Data Science Professional Certificate (Machine Learning, SQL, Data Visualization)} \\
+     \textbf{Languages}{: Python, R, JavaScript, TypeScript, C/C++, Swift, SQL, HTML/CSS} \\
+     \textbf{Data Analysis \& ML}{: pandas, Apache Spark, NumPy, scikit-learn, PyTorch, XGBoost, LSTM, MLflow} \\
+     \textbf{Databases \& Cloud}{: PostgreSQL, MySQL, Redis, AWS RDS} \\
+     \textbf{Development Tools}{: Git/GitHub, Docker, Prefect, Power BI, Excel, FastAPI, Node.js, React}
+    }}
+ \end{itemize}
+

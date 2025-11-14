@@ -79,12 +79,11 @@ const ExperiencePage: React.FC = () => {
       description: 'Leading data analytics initiatives for a major sports retail chain with 40+ locations.',
       achievements: [
         'Analyzed 10M+ rows of sales data using PostgreSQL and pandas across 40 retail locations',
-        'Created 5 Power BI dashboards for performance metrics, reducing weekly reporting time by 80%',
-        'Streamlined data cleaning using Python, resolving 1,700+ data inconsistencies and anomalies',
-        'Implemented automated ETL pipelines processing 100K+ daily transactions',
-        'Developed predictive models for inventory optimization with 85% accuracy'
+        'Built automated data pipelines with Prefect, reducing manual processing from 5 hours to 1 hour weekly',
+        'Developed store-specific sales forecast models using XGBoost, achieving 85% accuracy (15% MAPE)',
+        'Leveraged AI to automate development workflows, accelerating project completion by 80%'
       ],
-      technologies: ['Python', 'PostgreSQL', 'Power BI', 'Pandas', 'NumPy', 'Scikit-learn', 'ETL', 'Azure'],
+      technologies: ['Python', 'PostgreSQL', 'Pandas', 'Prefect', 'XGBoost', 'NumPy', 'Scikit-learn'],
       icon: <SunSkiLogoIcon />,
       color: '#667eea'
     },
@@ -120,13 +119,11 @@ const ExperiencePage: React.FC = () => {
       type: 'part-time',
       description: 'Managed complete financial operations for a vacation rental business.',
       achievements: [
-        'Managed $60K yearly revenue processing 50+ monthly transactions in QuickBooks',
+        'Managed $30K yearly revenue processing 50+ monthly transactions in QuickBooks',
         'Maintained financial records with 99% accuracy for accounts payable and receivable',
-        'Generated monthly financial reports to track revenue trends and inform management decisions',
-        'Automated invoice generation and payment tracking, saving 10 hours weekly',
-        'Implemented digital filing system for improved document management'
+        'Generated monthly financial reports to track revenue trends and inform management decisions'
       ],
-      technologies: ['QuickBooks', 'Excel', 'Financial Reporting', 'Data Analysis', 'Automation'],
+      technologies: ['QuickBooks', 'Excel', 'Financial Reporting'],
       icon: <TrendingUp />,
       color: '#00d4aa'
     }

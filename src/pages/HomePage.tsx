@@ -10,7 +10,8 @@ import * as THREE from 'three';
 import {
   SiPython, SiR, SiJavascript, SiTypescript, SiCplusplus, SiSwift, SiMysql,
   SiPandas, SiNumpy, SiScikitlearn, SiPytorch, SiPostgresql, SiRedis, SiAmazon,
-  SiGit, SiDocker, SiFastapi, SiNodedotjs, SiReact
+  SiGit, SiDocker, SiFastapi, SiNodedotjs, SiReact, SiPrefect, SiApacheairflow,
+  SiApachespark, SiMlflow
 } from 'react-icons/si';
 import './HomePage.css';
 
@@ -269,6 +270,9 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     { name: 'MySQL', icon: <SiMysql size={50} /> },
     { name: 'PyTorch', icon: <SiPytorch size={50} /> },
     { name: 'pandas', icon: <SiPandas size={50} /> },
+    { name: 'NumPy', icon: <SiNumpy size={50} /> },
+    { name: 'Scikit-learn', icon: <SiScikitlearn size={50} /> },
+    { name: 'XGBoost', icon: <Brain size={50} strokeWidth={1.5} /> },
     { name: 'Docker', icon: <SiDocker size={50} /> },
     { name: 'AWS', icon: <SiAmazon size={50} /> },
     { name: 'Git', icon: <SiGit size={50} /> },
@@ -277,7 +281,11 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     { name: 'Excel', icon: <FileSpreadsheet size={50} strokeWidth={1.5} /> },
     { name: 'C++', icon: <SiCplusplus size={50} /> },
     { name: 'R', icon: <SiR size={50} /> },
-    { name: 'Swift', icon: <SiSwift size={50} /> }
+    { name: 'Swift', icon: <SiSwift size={50} /> },
+    { name: 'Prefect', icon: <SiPrefect size={50} /> },
+    { name: 'Apache Airflow', icon: <SiApacheairflow size={50} /> },
+    { name: 'Apache Spark', icon: <SiApachespark size={50} /> },
+    { name: 'MLflow', icon: <SiMlflow size={50} /> }
   ];
 
   return (
